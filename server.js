@@ -23,7 +23,7 @@ const opts = {
 };
 
 
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/budger", opts)
+mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/budget", opts)
 // routes
 app.use(require("./routes/api.js"));
 
