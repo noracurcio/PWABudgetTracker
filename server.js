@@ -15,15 +15,13 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const opts = {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useFindAndModify: false,
   useCreateIndex: true,
-  useFindAndModify: false
-};
+  useUnifiedTopology: true
+});
 
-
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/budget", opts)
 // routes
 app.use(require("./routes/api.js"));
 
