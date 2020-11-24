@@ -2,8 +2,7 @@
 # **Description**
 This is an application designed to allow the user to create transactions and keep track of their ongoing financial status. 
 
-## ![Image Info]()
-## ![Image2]()
+## ![Image Info](./public/assets/screenshot.png)
 
 
 # **Installation**
@@ -17,7 +16,7 @@ This project uses Javascript, HTML, CSS,  mongoDB and Mongoose,
 
 
 # **Credits**
-Credit to this project go to Gary Almes, he provided much of the code to make this application functional.
+Credit for this project goes to Gary Almes, he provided much of the code necessary to make this application functional.
 
 # **License**
 N/A
